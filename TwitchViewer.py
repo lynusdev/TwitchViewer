@@ -56,7 +56,7 @@ def view(username, num):
             options.add_experimental_option('excludeSwitches', ['enable-logging'])
             if headless == "y":
                 options.headless = True
-            driver = webdriver.Chrome("./data/chromedriver.exe", options=options)
+            driver = webdriver.Chrome("chromedriver.exe", options=options)
             driver.maximize_window()
             driver.set_page_load_timeout(30)
             if first_iteration == True:
